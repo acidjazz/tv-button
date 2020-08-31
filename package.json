@@ -1,14 +1,14 @@
 {
-  "name": "tv-toast",
-  "version": "1.2.2",
-  "description": "programmatic toasts for nuxtjs powered by tailwindcss",
+  "name": "tv-button",
+  "version": "1.0.0",
+  "description": "buttons for nuxtjs powered by tailwindcss",
   "main": "src/index.js",
   "scripts": {
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/acidjazz/tv-toast.git"
+    "url": "git+ssh://git@github.com/acidjazz/tv-button.git"
   },
   "keywords": [
     "vue",
@@ -19,9 +19,9 @@
   "author": "kevin olson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/acidjazz/tv-toast/issues"
+    "url": "https://github.com/acidjazz/tv-button/issues"
   },
-  "homepage": "https://github.com/acidjazz/tv-toast#readme",
+  "homepage": "https://github.com/acidjazz/tv-button#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.11.0",
     "@vue/test-utils": "^1.0.5",

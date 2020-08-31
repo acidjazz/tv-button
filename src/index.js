@@ -1,14 +1,6 @@
-import TvToast from './tv-toast.vue'
-import { spawn, removeElement } from './utils.js'
-
-let installed = false
-
+import PushButton from './tv-button.vue'
 export default {
   install(Vue) {
-    if (installed) return
-    Vue.component('TvToast', TvToast)
-    installed = true
+    Vue.component('PushButton', PushButton)
   }
 }
-
-export { TvToast, spawn, removeElement }
