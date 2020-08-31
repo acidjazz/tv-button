@@ -1,6 +1,14 @@
-import PushButton from './tv-button.vue'
+import PushButton from './PushButton.vue'
+const components = [ PushButton ]
+
 export default {
-  install(Vue) {
-    Vue.component('PushButton', PushButton)
+  install (Vue, options = {}) {
+    components.forEach(component => {
+      Vue.component(component.name, component)
+    })
   }
+}
+
+export {
+  PushButton,
 }
