@@ -1,4 +1,4 @@
-import PushButton from './PushButton.vue'
+import PushButton from './PushButton'
 const components = [ PushButton ]
 
 export default {

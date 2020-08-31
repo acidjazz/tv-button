@@ -14,7 +14,7 @@
     "vue",
     "vuejs",
     "tailwindcss",
-    "toast"
+    "button"
   ],
   "author": "kevin olson",
   "license": "MIT",
