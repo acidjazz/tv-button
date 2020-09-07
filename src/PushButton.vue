@@ -3,20 +3,20 @@
     <button
       :disabled="!is_active"
       type="button"
-      :class="[sizes[size], state_theme(theme), innerGroup[group]]"
+      :class="[sizes[size], state_theme(theme), innerGroup[group], cursor]"
       class="relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150"
     >
       <slot />
       <div
         v-if="state === 'loading'"
-        class="absolute left-0 right-0 bottom-0 h-2 w-1/2 animation-loading"
+        class="absolute left-0 right-0 bottom-0 h-2 w-1/2 animation-loading cursor-wait"
         :class="loading[theme]"
       />
       <div
         v-if="progress !== false"
         :style="`width: ${progress}%`"
         :class="loading[theme]"
-        class="absolute inset-0 w-full h-full"
+        class="absolute inset-0 w-full h-full cursor-wait"
       />
       <div
         v-if="progress !== false"
@@ -117,6 +117,9 @@ export default {
   computed: {
     is_active () {
       return this.state === 'active' && this.progress === false
+    },
+    cursor () {
+      return this.is_active ? 'cursor-pointer' : 'cursor-wait'
     },
   },
   methods: {
