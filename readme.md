@@ -38,21 +38,22 @@ module.exports = {
 ```
 
 
-# Features
-### ButtonGroup
+## Features
+
+### ButtonGroup component
 
 ![](media/group1.png?raw=true)
 
 ```html
-      <ButtonGroup>
-        <PushButton group="left">
-          left
-        </PushButton>
-        <PushButton group="middle">
-          middle
-        </PushButton>
-        <PushButton group="right">
-          right
-        </PushButton>
-      </ButtonGroup>
+  <ButtonGroup>
+    <PushButton group="left">
+      left
+    </PushButton>
+    <PushButton group="middle">
+      middle
+    </PushButton>
+    <PushButton group="right">
+      right
+    </PushButton>
+  </ButtonGroup>
 ```
