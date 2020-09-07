@@ -41,6 +41,7 @@ module.exports = {
 ## Features
 
 ### ButtonGroup component
+ - Works with themes
 
 ![](media/group1.png?raw=true)
 
