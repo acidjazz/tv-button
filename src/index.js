@@ -1,5 +1,6 @@
 import PushButton from './PushButton.vue'
-const components = [ PushButton ]
+import ButtonGroup from './ButtonGroup.vue'
+const components = [ PushButton, ButtonGroup ]
 
 export default {
   install (Vue, options = {}) {
@@ -8,5 +9,4 @@ export default {
     })
   }
 }
-
-export { PushButton }
+export { PushButton, ButtonGroup }

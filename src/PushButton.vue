@@ -1,10 +1,10 @@
 <template>
-  <span class="inline-flex rounded-md shadow-sm">
+  <span :class="['inline-flex', outerGroup[group]]">
     <button
       :disabled="!is_active"
       type="button"
-      :class="[sizes[size], state_theme(theme)]"
-      class="relative overflow-hidden inline-flex items-center leading-4 font-medium rounded transition ease-in-out duration-150"
+      :class="[sizes[size], state_theme(theme), innerGroup[group]]"
+      class="relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150"
     >
       <slot />
       <div
@@ -64,6 +64,12 @@ export default {
       type: [Boolean, Number],
       default: false,
     },
+    group: {
+      type: String,
+      required: false,
+      default: 'single',
+      validate: group => ['single', 'left', 'right', 'middle'].includes(group)
+    },
   },
   data () {
     return {
@@ -87,6 +93,18 @@ export default {
         m: 'px-4 py-2 text-sm leading-5',
         l: 'px-4 py-2 text-base leading-6',
         xl: 'px-6 py-3 text-base leading-6',
+      },
+      outerGroup: {
+        single: 'rounded-md shadow-sm',
+        left: 'rounded-l-md',
+        middle: '',
+        right: 'rounded-r-md',
+      },
+      innerGroup: {
+        single: 'rounded-md',
+        left: 'rounded-l-md border-r-0 focus:z-10',
+        middle: 'focus:z-10',
+        right: 'rounded-r-md border-l-0 focus:z-10',
       },
       loading: {
         white: 'bg-gray-200',

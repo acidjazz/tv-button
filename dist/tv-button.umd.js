@@ -208,6 +208,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, "PushButton", function() { return /* reexport */ PushButton; });
+__webpack_require__.d(__webpack_exports__, "ButtonGroup", function() { return /* reexport */ ButtonGroup; });
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 // This file is imported into lib/wc client bundles.
@@ -233,12 +234,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d7d65bb-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=template&id=27f9b446&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{staticClass:"inline-flex rounded-md shadow-sm"},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium rounded transition ease-in-out duration-150",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme)],attrs:{"disabled":!_vm.is_active,"type":"button"}},[_vm._t("default"),(_vm.state === 'loading')?_c('div',{staticClass:"absolute left-0 right-0 bottom-0 h-2 w-1/2 animation-loading",class:_vm.loading[_vm.theme]}):_vm._e(),(_vm.progress !== false)?_c('div',{staticClass:"absolute inset-0 w-full h-full",class:_vm.loading[_vm.theme],style:(("width: " + _vm.progress + "%"))}):_vm._e(),(_vm.progress !== false)?_c('div',{staticClass:"absolute inset-0 flex items-center justify-center"},[_vm._t("default")],2):_vm._e()],2)])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d7d65bb-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=template&id=38eaa9db&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{class:['inline-flex', _vm.outerGroup[_vm.group]]},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group]],attrs:{"disabled":!_vm.is_active,"type":"button"}},[_vm._t("default"),(_vm.state === 'loading')?_c('div',{staticClass:"absolute left-0 right-0 bottom-0 h-2 w-1/2 animation-loading",class:_vm.loading[_vm.theme]}):_vm._e(),(_vm.progress !== false)?_c('div',{staticClass:"absolute inset-0 w-full h-full",class:_vm.loading[_vm.theme],style:(("width: " + _vm.progress + "%"))}):_vm._e(),(_vm.progress !== false)?_c('div',{staticClass:"absolute inset-0 flex items-center justify-center"},[_vm._t("default")],2):_vm._e()],2)])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=template&id=27f9b446&
+// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=template&id=38eaa9db&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=script&lang=js&
 //
@@ -307,6 +308,12 @@ var staticRenderFns = []
       type: [Boolean, Number],
       default: false,
     },
+    group: {
+      type: String,
+      required: false,
+      default: 'single',
+      validate: group => ['single', 'left', 'right', 'middle'].includes(group)
+    },
   },
   data () {
     return {
@@ -330,6 +337,18 @@ var staticRenderFns = []
         m: 'px-4 py-2 text-sm leading-5',
         l: 'px-4 py-2 text-base leading-6',
         xl: 'px-6 py-3 text-base leading-6',
+      },
+      outerGroup: {
+        single: 'rounded-md shadow-sm',
+        left: 'rounded-l-md',
+        middle: '',
+        right: 'rounded-r-md',
+      },
+      innerGroup: {
+        single: 'rounded-md',
+        left: 'rounded-l-md border-r-0 focus:z-10',
+        middle: 'focus:z-10',
+        right: 'rounded-r-md border-l-0 focus:z-10',
       },
       loading: {
         white: 'bg-gray-200',
@@ -479,9 +498,36 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var PushButton = (component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d7d65bb-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ButtonGroup.vue?vue&type=template&id=3201f577&
+var ButtonGroupvue_type_template_id_3201f577_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{staticClass:"inline-flex shadow-sm rounded"},[_vm._t("default")],2)}
+var ButtonGroupvue_type_template_id_3201f577_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/ButtonGroup.vue?vue&type=template&id=3201f577&
+
+// CONCATENATED MODULE: ./src/ButtonGroup.vue
+
+var script = {}
+
+
+/* normalize component */
+
+var ButtonGroup_component = normalizeComponent(
+  script,
+  ButtonGroupvue_type_template_id_3201f577_render,
+  ButtonGroupvue_type_template_id_3201f577_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var ButtonGroup = (ButtonGroup_component.exports);
 // CONCATENATED MODULE: ./src/index.js
 
-const components = [ PushButton ]
+
+const components = [ PushButton, ButtonGroup ]
 
 /* harmony default export */ var src_0 = ({
   install (Vue, options = {}) {
@@ -490,7 +536,6 @@ const components = [ PushButton ]
     })
   }
 });
-
 
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js

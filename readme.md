@@ -19,7 +19,7 @@ npm install nuxt-tailvue
 yarn add nuxt-tailvue
 ```
 
-2. Add `nuxt-tv-button` to the `modules` section of `nuxt.concifg.js`
+2. Add `button` to the `modules` section of `nuxt.config.js`
 ```js
 {
   modules: [
@@ -37,3 +37,22 @@ module.exports = {
   }
 ```
 
+
+# Features
+### ButtonGroup
+
+![](media/group1.png?raw=true)
+
+```html
+      <ButtonGroup>
+        <PushButton group="left">
+          left
+        </PushButton>
+        <PushButton group="middle">
+          middle
+        </PushButton>
+        <PushButton group="right">
+          right
+        </PushButton>
+      </ButtonGroup>
+```
