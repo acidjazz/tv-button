@@ -58,3 +58,14 @@ module.exports = {
     </PushButton>
   </ButtonGroup>
 ```
+
+### Combine with [tv-icon](https://github.com/acidjazz/tv-icon)
+
+![](media/paired.png?raw=true)
+
+```html
+<PushButton>
+    <IconCheck class="w-5 h-5 mr-2" primary="text-green-300" secondary="text-green-400"/>
+    Pair with Icons
+</PushButton>
+```
