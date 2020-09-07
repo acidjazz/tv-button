@@ -1,6 +1,6 @@
 {
   "name": "tv-button",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "buttons for nuxtjs powered by tailwindcss",
   "main": "dist/tv-button.umd.js",
   "files": [
