@@ -1,10 +1,10 @@
 <template>
-  <span :class="['inline-flex', outerGroup[group]]">
+  <span :class="['inline-flex', outerGroup[group]]" @click="$emit('click')">
     <button
       :disabled="!is_active"
       type="button"
       :class="[sizes[size], state_theme(theme), innerGroup[group], cursor]"
-      class="relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150"
+      class="relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center"
     >
       <slot />
       <div
