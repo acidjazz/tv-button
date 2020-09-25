@@ -1,9 +1,9 @@
 <template>
-  <span :class="['inline-flex', outerGroup[group]]" @click="$emit('click')">
+  <span :class="['inline-flex', outerGroup[group]]" @click="click">
     <button
       :disabled="!is_active"
       type="button"
-      :class="[sizes[size], state_theme(theme), innerGroup[group], cursor]"
+      :class="[sizes[size], state_theme(theme), innerGroup[group], cursor, innerClass]"
       class="relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center"
     >
       <slot />
@@ -58,7 +58,7 @@ export default {
     state: {
       type: String,
       default: 'active',
-      validate: state => ['active', 'loading'].includes(state),
+      validate: state => ['active', 'loading', 'disabled'].includes(state),
     },
     progress: {
       type: [Boolean, Number],
@@ -69,6 +69,11 @@ export default {
       required: false,
       default: 'single',
       validate: group => ['single', 'left', 'right', 'middle'].includes(group)
+    },
+    innerClass: {
+      type: String,
+      required: false,
+      default: '',
     },
   },
   data () {
@@ -97,7 +102,7 @@ export default {
       outerGroup: {
         single: 'rounded-md shadow-sm',
         left: 'rounded-l-md',
-        middle: '',
+        middle: '-ml-px',
         right: 'rounded-r-md',
       },
       innerGroup: {
@@ -118,8 +123,11 @@ export default {
     is_active () {
       return this.state === 'active' && this.progress === false
     },
+    is_disabled () {
+      return this.state === 'disabled'
+    },
     cursor () {
-      return this.is_active ? 'cursor-pointer' : 'cursor-wait'
+      return this.is_active ? 'cursor-pointer' : this.is_disabled ? 'cursor-not-allowed' :  'cursor-wait'
     },
   },
   methods: {
@@ -127,6 +135,9 @@ export default {
       if (this.is_active)
         return [this.themes[theme], this.active[theme]]
       return this.themes[theme]
+    },
+    click () {
+      if (this.is_active) this.$emit('click')
     },
   },
 }
