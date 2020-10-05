@@ -83,6 +83,7 @@ export default {
         white: 'border border-gray-300 text-gray-700 bg-white',
         indigo: 'text-white bg-indigo-600',
         'indigo-light': 'text-indigo-700 bg-indigo-100',
+        'indigo-dark': 'text-indigo-200 bg-indigo-900',
         red: 'text-white bg-red-600',
       },
       active: {
@@ -90,6 +91,7 @@ export default {
         white: 'hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50',
         indigo: 'hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700',
         'indigo-light': 'hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200',
+        'indigo-dark': 'hover:bg-indigo-600 focus:outline-none focus:border-indigo-500 focus:shadow-outline-indigo active:bg-indigo-600',
         red: 'hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700',
       },
       sizes: {
