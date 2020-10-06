@@ -234,12 +234,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d7d65bb-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=template&id=2a4eb9bf&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d7d65bb-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=template&id=81be92c8&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{class:['inline-flex', _vm.outerGroup[_vm.group]],on:{"click":_vm.click}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass],attrs:{"disabled":!_vm.is_active,"type":"button"}},[_vm._t("default"),(_vm.state === 'loading')?_c('div',{staticClass:"absolute left-0 right-0 bottom-0 h-2 w-1/2 animation-loading cursor-wait",class:_vm.loading[_vm.theme]}):_vm._e(),(_vm.progress !== false)?_c('div',{staticClass:"absolute inset-0 w-full h-full cursor-wait",class:_vm.loading[_vm.theme],style:(("width: " + _vm.progress + "%"))}):_vm._e(),(_vm.progress !== false)?_c('div',{staticClass:"absolute inset-0 flex items-center justify-center"},[_vm._t("default")],2):_vm._e()],2)])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=template&id=2a4eb9bf&
+// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=template&id=81be92c8&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=script&lang=js&
 //
@@ -335,7 +335,7 @@ var staticRenderFns = []
         white: 'hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50',
         indigo: 'hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700',
         'indigo-light': 'hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200',
-        'indigo-dark': 'hover:bg-indigo-600 focus:outline-none focus:border-indigo-500 focus:shadow-outline-indigo active:bg-indigo-600',
+        'indigo-dark': 'hover:bg-indigo-700 hover:text-white focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo active:bg-indigo-800',
         red: 'hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700',
       },
       sizes: {
