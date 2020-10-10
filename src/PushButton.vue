@@ -117,6 +117,7 @@ export default {
         white: 'bg-gray-200',
         indigo: 'bg-white bg-indigo-400',
         'indigo-light': 'bg-indigo-300',
+        'indigo-dark': 'bg-indigo-700',
         red: 'bg-red-400',
       },
     }
