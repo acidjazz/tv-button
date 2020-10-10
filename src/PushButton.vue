@@ -13,6 +13,10 @@
         :class="loading[theme]"
       />
       <div
+        v-if="state === 'loading-quiet'"
+        class="absolute inset-0 cursor-wait"
+      />
+      <div
         v-if="progress !== false"
         :style="`width: ${progress}%`"
         :class="loading[theme]"
@@ -58,7 +62,7 @@ export default {
     state: {
       type: String,
       default: 'active',
-      validate: state => ['active', 'loading', 'disabled'].includes(state),
+      validate: state => ['active', 'loading', 'loading-quiet', 'disabled'].includes(state),
     },
     progress: {
       type: [Boolean, Number],
