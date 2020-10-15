@@ -1,5 +1,17 @@
 <template>
-  <span :class="['inline-flex', outerGroup[group]]" @click="click">
+  <n-link
+    v-if="to !== false"
+    :to="to"
+    :class="['inline-flex', outerGroup[group]]"
+  >
+    <button
+      :class="[sizes[size], state_theme(theme), innerGroup[group], cursor, innerClass]"
+      class="relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center"
+    >
+      <slot />
+    </button>
+  </n-link>
+  <span v-else-if="to === false" :class="['inline-flex', outerGroup[group]]" @click="click">
     <button
       :disabled="!is_active"
       type="button"
@@ -7,7 +19,7 @@
       class="relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center"
     >
       <slot />
-      <div
+      <dev
         v-if="state === 'loading'"
         class="absolute left-0 right-0 bottom-0 h-2 w-1/2 animation-loading cursor-wait"
         :class="loading[theme]"
@@ -49,6 +61,11 @@
 <script>
 export default {
   props: {
+    to: {
+      type: [Boolean, String],
+      required: false,
+      default: false,
+    },
     size: {
       type: String,
       default: 'm',

@@ -69,3 +69,12 @@ module.exports = {
     Pair with Icons
 </PushButton>
 ```
+
+### Use as a nuxt-link
+- Button turns into a [<nuxt-link>](https://nuxtjs.org/api/components-nuxt-link/) for proper navigation
+
+```html
+<PushButton to="/about">
+  About Us
+</PushButton>
+```
