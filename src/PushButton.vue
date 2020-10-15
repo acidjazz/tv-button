@@ -19,27 +19,27 @@
       class="relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center"
     >
       <slot />
-      <dev
+      <span
         v-if="state === 'loading'"
         class="absolute left-0 right-0 bottom-0 h-2 w-1/2 animation-loading cursor-wait"
         :class="loading[theme]"
       />
-      <div
+      <span
         v-if="state === 'loading-quiet'"
         class="absolute inset-0 cursor-wait"
       />
-      <div
+      <span
         v-if="progress !== false"
         :style="`width: ${progress}%`"
         :class="loading[theme]"
         class="absolute inset-0 w-full h-full cursor-wait"
       />
-      <div
+      <span
         v-if="progress !== false"
         class="absolute inset-0 flex items-center justify-center"
       >
         <slot />
-      </div>
+      </span>
     </button>
   </span>
 </template>
