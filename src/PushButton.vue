@@ -11,7 +11,8 @@
       <slot />
     </button>
   </n-link>
-  <span v-else-if="to === false" :class="['inline-flex', outerGroup[group]]" @click="click">
+  <span v-else-if="to === false" :class="['inline-flex relative', outerGroup[group]]" @click="click">
+
     <button
       :disabled="!is_active"
       type="button"
@@ -41,6 +42,12 @@
         <slot />
       </span>
     </button>
+    <span v-if="ping" class="absolute top-0 right-0 -mr-1 -mt-1 z-10">
+      <span class="flex w-3 h-3 relative">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" :class="`bg-${pingColor}-400`"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3" :class="`bg-${pingColor}-500`"></span>
+      </span>
+    </span>
   </span>
 </template>
 
@@ -95,6 +102,16 @@ export default {
       type: String,
       required: false,
       default: '',
+    },
+    ping: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    pingColor: {
+      type: String,
+      required: false,
+      default: 'pink',
     },
   },
   data () {
