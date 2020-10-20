@@ -225,14 +225,29 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d7d65bb-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=template&id=0b0b39a8&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.to !== false)?_c('n-link',{class:['inline-flex', _vm.outerGroup[_vm.group]],attrs:{"to":_vm.to}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass]},[_vm._t("default")],2)]):(_vm.to === false)?_c('span',{class:['inline-flex relative', _vm.outerGroup[_vm.group]],on:{"click":_vm.click}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass],attrs:{"disabled":!_vm.is_active,"type":"button"}},[_vm._t("default"),(_vm.state === 'loading')?_c('span',{staticClass:"absolute left-0 right-0 bottom-0 h-2 w-1/2 animation-loading cursor-wait",class:_vm.loading[_vm.theme]}):_vm._e(),(_vm.state === 'loading-quiet')?_c('span',{staticClass:"absolute inset-0 cursor-wait"}):_vm._e(),(_vm.progress !== false)?_c('span',{staticClass:"absolute inset-0 w-full h-full cursor-wait",class:_vm.loading[_vm.theme],style:(("width: " + _vm.progress + "%"))}):_vm._e(),(_vm.progress !== false)?_c('span',{staticClass:"absolute inset-0 flex items-center justify-center"},[_vm._t("default")],2):_vm._e()],2),(_vm.ping)?_c('span',{staticClass:"absolute top-0 right-0 -mr-1 -mt-1 z-10"},[_c('span',{staticClass:"flex w-3 h-3 relative"},[_c('span',{staticClass:"animate-ping absolute inline-flex h-full w-full rounded-full opacity-75",class:("bg-" + _vm.pingColor + "-400")}),_c('span',{staticClass:"relative inline-flex rounded-full h-3 w-3",class:("bg-" + _vm.pingColor + "-500")})])]):_vm._e()]):_vm._e()}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d7d65bb-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=template&id=cbdd8414&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.to !== false)?_c('n-link',{class:['inline-flex', _vm.outerGroup[_vm.group], {'shadow-sm': _vm.theme !== 'text'}],attrs:{"to":_vm.to}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass]},[_vm._t("default")],2)]):(_vm.href !== false)?_c('a',{class:['inline-flex', _vm.outerGroup[_vm.group], {'shadow-sm': _vm.theme !== 'text'}],attrs:{"alt":("Visit " + _vm.href),"href":_vm.href}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass]},[_vm._t("default")],2)]):(_vm.to === false)?_c('span',{class:['inline-flex relative', _vm.outerGroup[_vm.group], {'shadow-sm': _vm.theme !== 'text'}],on:{"click":_vm.click}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass],attrs:{"disabled":!_vm.is_active,"type":"button"}},[_vm._t("default"),(_vm.state === 'loading')?_c('span',{staticClass:"absolute left-0 right-0 bottom-0 h-2 w-1/2 animation-loading cursor-wait",class:_vm.loading[_vm.theme]}):_vm._e(),(_vm.state === 'loading-quiet')?_c('span',{staticClass:"absolute inset-0 cursor-wait"}):_vm._e(),(_vm.progress !== false)?_c('span',{staticClass:"absolute inset-0 w-full h-full cursor-wait",class:_vm.loading[_vm.theme],style:(("width: " + _vm.progress + "%"))}):_vm._e(),(_vm.progress !== false)?_c('span',{staticClass:"absolute inset-0 flex items-center justify-center"},[_vm._t("default")],2):_vm._e()],2),(_vm.ping)?_c('span',{staticClass:"absolute top-0 right-0 -mr-1 -mt-1 z-10"},[_c('span',{staticClass:"flex w-3 h-3 relative"},[_c('span',{staticClass:"animate-ping absolute inline-flex h-full w-full rounded-full opacity-75",class:("bg-" + _vm.pingColor + "-400")}),_c('span',{staticClass:"relative inline-flex rounded-full h-3 w-3",class:("bg-" + _vm.pingColor + "-500")})])]):_vm._e()]):_vm._e()}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=template&id=0b0b39a8&
+// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=template&id=cbdd8414&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -308,6 +323,11 @@ var staticRenderFns = []
       required: false,
       default: false,
     },
+    href: {
+      type: [Boolean, String],
+      required: false,
+      default: false,
+    },
     size: {
       type: String,
       default: 'm',
@@ -316,7 +336,7 @@ var staticRenderFns = []
     theme: {
       type: String,
       default: 'white',
-      validate: theme => ['white', 'indigo', 'indigo-light'].includes(theme),
+      validate: theme => ['white', 'indigo', 'indigo-light', 'indigo-dark'].includes(theme),
     },
     state: {
       type: String,
@@ -360,7 +380,7 @@ var staticRenderFns = []
         red: 'text-white bg-red-600',
       },
       active: {
-        text: 'hover:text-gray-500 focus:outline-none active:text-gray-800 active:bg-gray-50',
+        text: 'hover:text-gray-500 hover:bg-gray-100 focus:outline-none active:text-gray-800 active:bg-gray-50',
         white: 'hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50',
         indigo: 'hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700',
         'indigo-light': 'hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200',
@@ -375,7 +395,7 @@ var staticRenderFns = []
         xl: 'px-6 py-3 text-base leading-6',
       },
       outerGroup: {
-        single: 'rounded-md shadow-sm',
+        single: 'rounded-md',
         left: 'rounded-l-md',
         middle: '-ml-px',
         right: 'rounded-r-md',

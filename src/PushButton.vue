@@ -2,7 +2,7 @@
   <n-link
     v-if="to !== false"
     :to="to"
-    :class="['inline-flex', outerGroup[group]]"
+    :class="['inline-flex', outerGroup[group], {'shadow-sm': theme !== 'text'}]"
   >
     <button
       :class="[sizes[size], state_theme(theme), innerGroup[group], cursor, innerClass]"
@@ -11,7 +11,22 @@
       <slot />
     </button>
   </n-link>
-  <span v-else-if="to === false" :class="['inline-flex relative', outerGroup[group]]" @click="click">
+
+  <a
+    v-else-if="href !== false"
+    :alt="`Visit ${href}`"
+    :href="href"
+    :class="['inline-flex', outerGroup[group], {'shadow-sm': theme !== 'text'}]"
+  >
+    <button
+      :class="[sizes[size], state_theme(theme), innerGroup[group], cursor, innerClass]"
+      class="relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center"
+    >
+      <slot />
+    </button>
+  </a>
+
+  <span v-else-if="to === false" :class="['inline-flex relative', outerGroup[group], {'shadow-sm': theme !== 'text'}]" @click="click">
 
     <button
       :disabled="!is_active"
@@ -73,6 +88,11 @@ export default {
       required: false,
       default: false,
     },
+    href: {
+      type: [Boolean, String],
+      required: false,
+      default: false,
+    },
     size: {
       type: String,
       default: 'm',
@@ -81,7 +101,7 @@ export default {
     theme: {
       type: String,
       default: 'white',
-      validate: theme => ['white', 'indigo', 'indigo-light'].includes(theme),
+      validate: theme => ['white', 'indigo', 'indigo-light', 'indigo-dark'].includes(theme),
     },
     state: {
       type: String,
@@ -125,7 +145,7 @@ export default {
         red: 'text-white bg-red-600',
       },
       active: {
-        text: 'hover:text-gray-500 focus:outline-none active:text-gray-800 active:bg-gray-50',
+        text: 'hover:text-gray-500 hover:bg-gray-100 focus:outline-none active:text-gray-800 active:bg-gray-50',
         white: 'hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50',
         indigo: 'hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700',
         'indigo-light': 'hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200',
@@ -140,7 +160,7 @@ export default {
         xl: 'px-6 py-3 text-base leading-6',
       },
       outerGroup: {
-        single: 'rounded-md shadow-sm',
+        single: 'rounded-md',
         left: 'rounded-l-md',
         middle: '-ml-px',
         right: 'rounded-r-md',
