@@ -143,6 +143,7 @@ export default {
         'indigo-light': 'text-indigo-700 bg-indigo-100',
         'indigo-dark': 'text-indigo-200 bg-indigo-900',
         red: 'text-white bg-red-600',
+        green: 'text-white bg-green-600',
       },
       active: {
         text: 'hover:text-gray-500 hover:bg-gray-100 focus:outline-none active:text-gray-800 active:bg-gray-50',
@@ -151,6 +152,7 @@ export default {
         'indigo-light': 'hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200',
         'indigo-dark': 'hover:bg-indigo-700 hover:text-white focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo active:bg-indigo-800',
         red: 'hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700',
+        green: 'hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green active:bg-green-700',
       },
       sizes: {
         xs: 'px-2.5 py-1.5 text-xs leading-4',
@@ -177,6 +179,7 @@ export default {
         'indigo-light': 'bg-indigo-300',
         'indigo-dark': 'bg-indigo-700',
         red: 'bg-red-400',
+        green: 'bg-green-400',
       },
     }
   },
