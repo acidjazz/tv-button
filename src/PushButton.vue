@@ -82,6 +82,7 @@
 
 <script>
 export default {
+  name: 'PushButton',
   props: {
     to: {
       type: [Boolean, String],
