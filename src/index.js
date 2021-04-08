@@ -7,7 +7,7 @@ const components = {
 
 export default {
   install (Vue, options = {}) {
-    for (var key in components) {
+    for (const key in components) {
       Vue.component(key, components[key])
     }
   }
