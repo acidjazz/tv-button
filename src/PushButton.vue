@@ -102,7 +102,7 @@ export default {
     theme: {
       type: String,
       default: 'white',
-      validate: theme => ['white', 'indigo', 'indigo-light', 'indigo-dark'].includes(theme),
+      validate: theme => ['white', 'red', 'yellow', 'blue', 'green', 'indigo', 'purple', 'indigo-light', 'indigo-dark'].includes(theme),
     },
     state: {
       type: String,
@@ -144,7 +144,11 @@ export default {
         'indigo-light': 'text-indigo-700 bg-indigo-100',
         'indigo-dark': 'text-indigo-200 bg-indigo-900',
         red: 'text-white bg-red-600',
+        yellow: 'text-white bg-yellow-600',
         green: 'text-white bg-green-600',
+        blue: 'text-white bg-blue-600',
+        purple: 'text-white bg-purple-600',
+        pink: 'text-white bg-pink-600',
       },
       active: {
         text: 'hover:text-gray-500 hover:bg-gray-100 focus:outline-none active:text-gray-800 active:bg-gray-50',
@@ -153,7 +157,11 @@ export default {
         'indigo-light': 'hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200',
         'indigo-dark': 'hover:bg-indigo-700 hover:text-white focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo active:bg-indigo-800',
         red: 'hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700',
+        yellow: 'hover:bg-yellow-500 focus:outline-none focus:border-yellow-700 focus:shadow-outline-yellow active:bg-yellow-700',
         green: 'hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green active:bg-green-700',
+        blue: 'hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700',
+        purple: 'hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple active:bg-purple-700',
+        pink: 'hover:bg-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:bg-pink-700',
       },
       sizes: {
         xs: 'px-2.5 py-1.5 text-xs leading-4',
@@ -180,7 +188,11 @@ export default {
         'indigo-light': 'bg-indigo-300',
         'indigo-dark': 'bg-indigo-700',
         red: 'bg-red-400',
+        yellow: 'bg-yellow-400',
         green: 'bg-green-400',
+        blue: 'bg-blue-400',
+        purple: 'bg-purple-400',
+        pink: 'bg-pink-400',
       },
     }
   },
