@@ -173,14 +173,18 @@ export default {
       outerGroup: {
         single: 'rounded-md',
         left: 'rounded-l-md',
+        leftNm: 'rounded-l-md',
         middle: '-ml-px',
         right: 'rounded-r-md',
+        rightNm: 'rounded-r-md',
       },
       innerGroup: {
         single: 'rounded-md',
         left: 'rounded-l-md border-r-0 focus:z-10',
+        leftNm: 'rounded-l-md focus:z-10',
         middle: 'focus:z-10',
         right: 'rounded-r-md border-l-0 focus:z-10',
+        rightNm: 'rounded-r-md focus:z-10',
       },
       loading: {
         white: 'bg-gray-200',
