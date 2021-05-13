@@ -628,15 +628,16 @@ var ButtonGroup_component = normalizeComponent(
 // CONCATENATED MODULE: ./src/index.js
 
 
-const components = {
+
+const ComponentList = {
   PushButton: PushButton,
   ButtonGroup: ButtonGroup
 }
 
 /* harmony default export */ var src_0 = ({
   install (Vue, options = {}) {
-    for (const key in components) {
-      Vue.component(key, components[key])
+    for (const key in ComponentList) {
+      Vue.component(key, ComponentList[key])
     }
   }
 });

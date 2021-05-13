@@ -4,10 +4,9 @@
   "description": "buttons for nuxtjs powered by tailwindcss",
   "main": "dist/tv-button.umd.js",
   "files": [
+    "dist/tv-button.umd.min.js",
     "dist/tv-button.css",
-    "dist/*",
-    "src/*",
-    "*.js"
+    "types/"
   ],
   "scripts": {
     "test": "jest",
