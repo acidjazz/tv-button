@@ -241,12 +241,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"ec4bba34-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=template&id=c0ea4948&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"ec4bba34-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=template&id=5dd006b0&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.to !== false)?_c('n-link',{class:['inline-flex', _vm.outerGroup[_vm.group], {'shadow-sm': _vm.theme !== 'text'}],attrs:{"to":_vm.to}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass]},[_vm._t("default")],2)]):(_vm.href !== false)?_c('a',{class:['inline-flex', _vm.outerGroup[_vm.group], {'shadow-sm': _vm.theme !== 'text'}],attrs:{"alt":("Visit " + _vm.href),"href":_vm.href}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass]},[_vm._t("default")],2)]):(_vm.to === false)?_c('span',{class:['inline-flex relative', _vm.outerGroup[_vm.group], {'shadow-sm': _vm.theme !== 'text'}],on:{"click":_vm.click}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass],attrs:{"disabled":!_vm.is_active,"type":"button"}},[_vm._t("default"),(_vm.state === 'loading')?_c('span',{staticClass:"absolute left-0 right-0 bottom-0 h-2 w-1/2 animation-loading cursor-wait",class:_vm.loading[_vm.theme]}):_vm._e(),(_vm.state === 'loading-quiet')?_c('span',{staticClass:"absolute inset-0 cursor-wait"}):_vm._e(),(_vm.progress !== undefined)?_c('span',{staticClass:"absolute inset-0 w-full h-full cursor-wait",class:_vm.loading[_vm.theme],style:(("width: " + _vm.progress + "%"))}):_vm._e(),(_vm.progress !== undefined)?_c('span',{staticClass:"absolute inset-0 flex items-center justify-center"},[_vm._t("default")],2):_vm._e()],2),(_vm.ping)?_c('span',{staticClass:"absolute top-0 right-0 -mr-1 -mt-1 z-10"},[_c('span',{staticClass:"flex w-3 h-3 relative"},[_c('span',{staticClass:"animate-ping absolute inline-flex h-full w-full rounded-full opacity-75",class:("bg-" + _vm.pingColor + "-400")}),_c('span',{staticClass:"relative inline-flex rounded-full h-3 w-3",class:("bg-" + _vm.pingColor + "-500")})])]):_vm._e()]):_vm._e()}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=template&id=c0ea4948&
+// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=template&id=5dd006b0&
 
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
@@ -501,12 +501,12 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var PushButton = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"ec4bba34-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ButtonGroup.vue?vue&type=template&id=3cfb26f4&
-var ButtonGroupvue_type_template_id_3cfb26f4_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{staticClass:"inline-flex shadow-sm rounded"},[_vm._t("default")],2)}
-var ButtonGroupvue_type_template_id_3cfb26f4_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"ec4bba34-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ButtonGroup.vue?vue&type=template&id=2f492d72&
+var ButtonGroupvue_type_template_id_2f492d72_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{staticClass:"inline-flex shadow-sm rounded"},[_vm._t("default")],2)}
+var ButtonGroupvue_type_template_id_2f492d72_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/ButtonGroup.vue?vue&type=template&id=3cfb26f4&
+// CONCATENATED MODULE: ./src/ButtonGroup.vue?vue&type=template&id=2f492d72&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ButtonGroup.vue?vue&type=script&lang=js&
 //
@@ -516,9 +516,10 @@ var ButtonGroupvue_type_template_id_3cfb26f4_staticRenderFns = []
 //
 //
 
-/* harmony default export */ var ButtonGroupvue_type_script_lang_js_ = ({
-  name: 'PushButton',
-});
+
+/* harmony default export */ var ButtonGroupvue_type_script_lang_js_ = (external_commonjs_vue_commonjs2_vue_root_Vue_default.a.extend({
+  name: 'ButtonGroup',
+}));
 
 // CONCATENATED MODULE: ./src/ButtonGroup.vue?vue&type=script&lang=js&
  /* harmony default export */ var src_ButtonGroupvue_type_script_lang_js_ = (ButtonGroupvue_type_script_lang_js_); 
@@ -532,8 +533,8 @@ var ButtonGroupvue_type_template_id_3cfb26f4_staticRenderFns = []
 
 var ButtonGroup_component = normalizeComponent(
   src_ButtonGroupvue_type_script_lang_js_,
-  ButtonGroupvue_type_template_id_3cfb26f4_render,
-  ButtonGroupvue_type_template_id_3cfb26f4_staticRenderFns,
+  ButtonGroupvue_type_template_id_2f492d72_render,
+  ButtonGroupvue_type_template_id_2f492d72_staticRenderFns,
   false,
   null,
   null,

@@ -5,7 +5,8 @@
 </template>
 
 <script>
-export default {
-  name: 'PushButton',
-}
+import Vue from 'vue'
+export default Vue.extend({
+  name: 'ButtonGroup',
+})
 </script>
