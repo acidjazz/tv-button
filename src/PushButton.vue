@@ -1,6 +1,6 @@
 <template>
   <n-link
-    v-if="to !== false"
+    v-if="to !== undefined"
     :to="to"
     :class="['inline-flex', outerGroup[group], {'shadow-sm': theme !== 'text'}]"
   >
@@ -13,7 +13,7 @@
   </n-link>
 
   <a
-    v-else-if="href !== false"
+    v-else-if="href !== undefined"
     :alt="`Visit ${href}`"
     :href="href"
     :class="['inline-flex', outerGroup[group], {'shadow-sm': theme !== 'text'}]"
@@ -26,7 +26,7 @@
     </button>
   </a>
 
-  <span v-else-if="to === false" :class="['inline-flex relative', outerGroup[group], {'shadow-sm': theme !== 'text'}]" @click="click">
+  <span v-else-if="to === undefined" :class="['inline-flex relative', outerGroup[group], {'shadow-sm': theme !== 'text'}]" @click="click">
 
     <button
       :disabled="!is_active"
