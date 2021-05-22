@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
+		module.exports = factory(require("vue"));
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["tv-button"] = factory();
+		exports["tv-button"] = factory(require("vue"));
 	else
-		root["tv-button"] = factory();
-})((typeof self !== 'undefined' ? self : this), function() {
+		root["tv-button"] = factory(root["Vue"]);
+})((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__8bbf__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -192,6 +192,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
+/***/ "8bbf":
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__8bbf__;
+
+/***/ }),
+
 /***/ "da36":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -234,241 +241,142 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"28f8825e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=template&id=26d6283a&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.to !== false)?_c('n-link',{class:['inline-flex', _vm.outerGroup[_vm.group], {'shadow-sm': _vm.theme !== 'text'}],attrs:{"to":_vm.to}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass]},[_vm._t("default")],2)]):(_vm.href !== false)?_c('a',{class:['inline-flex', _vm.outerGroup[_vm.group], {'shadow-sm': _vm.theme !== 'text'}],attrs:{"alt":("Visit " + _vm.href),"href":_vm.href}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass]},[_vm._t("default")],2)]):(_vm.to === false)?_c('span',{class:['inline-flex relative', _vm.outerGroup[_vm.group], {'shadow-sm': _vm.theme !== 'text'}],on:{"click":_vm.click}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass],attrs:{"disabled":!_vm.is_active,"type":"button"}},[_vm._t("default"),(_vm.state === 'loading')?_c('span',{staticClass:"absolute left-0 right-0 bottom-0 h-2 w-1/2 animation-loading cursor-wait",class:_vm.loading[_vm.theme]}):_vm._e(),(_vm.state === 'loading-quiet')?_c('span',{staticClass:"absolute inset-0 cursor-wait"}):_vm._e(),(_vm.progress !== false)?_c('span',{staticClass:"absolute inset-0 w-full h-full cursor-wait",class:_vm.loading[_vm.theme],style:(("width: " + _vm.progress + "%"))}):_vm._e(),(_vm.progress !== false)?_c('span',{staticClass:"absolute inset-0 flex items-center justify-center"},[_vm._t("default")],2):_vm._e()],2),(_vm.ping)?_c('span',{staticClass:"absolute top-0 right-0 -mr-1 -mt-1 z-10"},[_c('span',{staticClass:"flex w-3 h-3 relative"},[_c('span',{staticClass:"animate-ping absolute inline-flex h-full w-full rounded-full opacity-75",class:("bg-" + _vm.pingColor + "-400")}),_c('span',{staticClass:"relative inline-flex rounded-full h-3 w-3",class:("bg-" + _vm.pingColor + "-500")})])]):_vm._e()]):_vm._e()}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"ec4bba34-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=template&id=c0ea4948&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.to !== false)?_c('n-link',{class:['inline-flex', _vm.outerGroup[_vm.group], {'shadow-sm': _vm.theme !== 'text'}],attrs:{"to":_vm.to}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass]},[_vm._t("default")],2)]):(_vm.href !== false)?_c('a',{class:['inline-flex', _vm.outerGroup[_vm.group], {'shadow-sm': _vm.theme !== 'text'}],attrs:{"alt":("Visit " + _vm.href),"href":_vm.href}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass]},[_vm._t("default")],2)]):(_vm.to === false)?_c('span',{class:['inline-flex relative', _vm.outerGroup[_vm.group], {'shadow-sm': _vm.theme !== 'text'}],on:{"click":_vm.click}},[_c('button',{staticClass:"relative overflow-hidden inline-flex items-center leading-4 font-medium transition ease-in-out duration-150 w-full justify-center",class:[_vm.sizes[_vm.size], _vm.state_theme(_vm.theme), _vm.innerGroup[_vm.group], _vm.cursor, _vm.innerClass],attrs:{"disabled":!_vm.is_active,"type":"button"}},[_vm._t("default"),(_vm.state === 'loading')?_c('span',{staticClass:"absolute left-0 right-0 bottom-0 h-2 w-1/2 animation-loading cursor-wait",class:_vm.loading[_vm.theme]}):_vm._e(),(_vm.state === 'loading-quiet')?_c('span',{staticClass:"absolute inset-0 cursor-wait"}):_vm._e(),(_vm.progress !== undefined)?_c('span',{staticClass:"absolute inset-0 w-full h-full cursor-wait",class:_vm.loading[_vm.theme],style:(("width: " + _vm.progress + "%"))}):_vm._e(),(_vm.progress !== undefined)?_c('span',{staticClass:"absolute inset-0 flex items-center justify-center"},[_vm._t("default")],2):_vm._e()],2),(_vm.ping)?_c('span',{staticClass:"absolute top-0 right-0 -mr-1 -mt-1 z-10"},[_c('span',{staticClass:"flex w-3 h-3 relative"},[_c('span',{staticClass:"animate-ping absolute inline-flex h-full w-full rounded-full opacity-75",class:("bg-" + _vm.pingColor + "-400")}),_c('span',{staticClass:"relative inline-flex rounded-full h-3 w-3",class:("bg-" + _vm.pingColor + "-500")})])]):_vm._e()]):_vm._e()}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=template&id=26d6283a&
+// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=template&id=c0ea4948&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+// EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
+var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
+var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
 
-/* harmony default export */ var PushButtonvue_type_script_lang_js_ = ({
-  name: 'PushButton',
-  props: {
-    to: {
-      type: [Boolean, String],
-      required: false,
-      default: false,
-    },
-    href: {
-      type: [Boolean, String],
-      required: false,
-      default: false,
-    },
-    size: {
-      type: String,
-      default: 'm',
-      validate: size => ['xs', 's', 'm', 'l', 'xl'].includes(size),
-    },
-    theme: {
-      type: String,
-      default: 'white',
-      validate: theme => ['white', 'red', 'yellow', 'blue', 'green', 'indigo', 'purple', 'indigo-light', 'indigo-dark'].includes(theme),
-    },
-    state: {
-      type: String,
-      default: 'active',
-      validate: state => ['active', 'loading', 'loading-quiet', 'disabled'].includes(state),
-    },
-    progress: {
-      type: [Boolean, Number],
-      default: false,
-    },
-    group: {
-      type: String,
-      required: false,
-      default: 'single',
-      validate: group => ['single', 'left', 'right', 'middle'].includes(group)
-    },
-    innerClass: {
-      type: String,
-      required: false,
-      default: '',
-    },
-    ping: {
-      type: Boolean,
-      required: false,
-      default: false,
-    },
-    pingColor: {
-      type: String,
-      required: false,
-      default: 'pink',
-    },
-  },
-  data () {
-    return {
-      themes: {
-        text: 'text-gray-700 bg-white',
-        white: 'border border-gray-300 text-gray-700 bg-white',
-        indigo: 'text-white bg-indigo-600',
-        'indigo-light': 'text-indigo-700 bg-indigo-100',
-        'indigo-dark': 'text-indigo-200 bg-indigo-900',
-        red: 'text-white bg-red-600',
-        yellow: 'text-white bg-yellow-600',
-        green: 'text-white bg-green-600',
-        blue: 'text-white bg-blue-600',
-        purple: 'text-white bg-purple-600',
-        pink: 'text-white bg-pink-600',
-      },
-      active: {
-        text: 'hover:text-gray-500 hover:bg-gray-100 focus:outline-none active:text-gray-800 active:bg-gray-50',
-        white: 'hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50',
-        indigo: 'hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700',
-        'indigo-light': 'hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200',
-        'indigo-dark': 'hover:bg-indigo-700 hover:text-white focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo active:bg-indigo-800',
-        red: 'hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700',
-        yellow: 'hover:bg-yellow-500 focus:outline-none focus:border-yellow-700 focus:shadow-outline-yellow active:bg-yellow-700',
-        green: 'hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green active:bg-green-700',
-        blue: 'hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700',
-        purple: 'hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple active:bg-purple-700',
-        pink: 'hover:bg-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:bg-pink-700',
-      },
-      sizes: {
-        xs: 'px-2.5 py-1.5 text-xs leading-4',
-        s: 'px-3 py-2 text-sm leading-4',
-        m: 'px-4 py-2 text-sm leading-5',
-        l: 'px-4 py-2 text-base leading-6',
-        xl: 'px-6 py-3 text-base leading-6',
-      },
-      outerGroup: {
-        single: 'rounded-md',
-        left: 'rounded-l-md',
-        leftNm: 'rounded-l-md',
-        middle: '-ml-px',
-        right: 'rounded-r-md',
-        rightNm: 'rounded-r-md',
-      },
-      innerGroup: {
-        single: 'rounded-md',
-        left: 'rounded-l-md border-r-0 focus:z-10',
-        leftNm: 'rounded-l-md focus:z-10',
-        middle: 'focus:z-10',
-        right: 'rounded-r-md border-l-0 focus:z-10',
-        rightNm: 'rounded-r-md focus:z-10',
-      },
-      loading: {
-        white: 'bg-gray-200',
-        indigo: 'bg-white bg-indigo-400',
-        'indigo-light': 'bg-indigo-300',
-        'indigo-dark': 'bg-indigo-700',
-        red: 'bg-red-400',
-        yellow: 'bg-yellow-400',
-        green: 'bg-green-400',
-        blue: 'bg-blue-400',
-        purple: 'bg-purple-400',
-        pink: 'bg-pink-400',
-      },
-    }
-  },
-  computed: {
-    is_active () {
-      return this.state === 'active' && this.progress === false
-    },
-    is_disabled () {
-      return this.state === 'disabled'
-    },
-    cursor () {
-      return this.is_active ? 'cursor-pointer' : this.is_disabled ? 'cursor-not-allowed' :  'cursor-wait'
-    },
-  },
-  methods: {
-    state_theme (theme) {
-      if (this.is_active)
-        return [this.themes[theme], this.active[theme]]
-      return this.themes[theme]
-    },
-    click () {
-      if (this.is_active) this.$emit('click')
-    },
-  },
-});
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/ts-loader??ref--12-2!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=script&lang=ts&
 
-// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=script&lang=js&
- /* harmony default export */ var src_PushButtonvue_type_script_lang_js_ = (PushButtonvue_type_script_lang_js_); 
+/* harmony default export */ var PushButtonvue_type_script_lang_ts_ = (external_commonjs_vue_commonjs2_vue_root_Vue_default.a.extend({
+    props: {
+        to: String,
+        href: String,
+        size: {
+            type: String,
+            default: 'm',
+        },
+        theme: {
+            type: String,
+            default: 'white',
+        },
+        state: {
+            type: String,
+            default: 'active',
+        },
+        progress: Number,
+        group: {
+            type: String,
+            default: 'single',
+        },
+        innerClass: String,
+        ping: {
+            type: Boolean,
+            default: false,
+        },
+        pingColor: {
+            type: String,
+            required: false,
+            default: 'pink',
+        },
+    },
+    data: function () {
+        return {
+            themes: {
+                text: 'text-gray-700 bg-white',
+                white: 'border border-gray-300 text-gray-700 bg-white',
+                indigo: 'text-white bg-indigo-600',
+                'indigo-light': 'text-indigo-700 bg-indigo-100',
+                'indigo-dark': 'text-indigo-200 bg-indigo-900',
+                red: 'text-white bg-red-600',
+                yellow: 'text-white bg-yellow-600',
+                green: 'text-white bg-green-600',
+                blue: 'text-white bg-blue-600',
+                purple: 'text-white bg-purple-600',
+                pink: 'text-white bg-pink-600',
+            },
+            active: {
+                text: 'hover:text-gray-500 hover:bg-gray-100 focus:outline-none active:text-gray-800 active:bg-gray-50',
+                white: 'hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50',
+                indigo: 'hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700',
+                'indigo-light': 'hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200',
+                'indigo-dark': 'hover:bg-indigo-700 hover:text-white focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo active:bg-indigo-800',
+                red: 'hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700',
+                yellow: 'hover:bg-yellow-500 focus:outline-none focus:border-yellow-700 focus:shadow-outline-yellow active:bg-yellow-700',
+                green: 'hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green active:bg-green-700',
+                blue: 'hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700',
+                purple: 'hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple active:bg-purple-700',
+                pink: 'hover:bg-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:bg-pink-700',
+            },
+            sizes: {
+                xs: 'px-2.5 py-1.5 text-xs leading-4',
+                s: 'px-3 py-2 text-sm leading-4',
+                m: 'px-4 py-2 text-sm leading-5',
+                l: 'px-4 py-2 text-base leading-6',
+                xl: 'px-6 py-3 text-base leading-6',
+            },
+            outerGroup: {
+                single: 'rounded-md',
+                left: 'rounded-l-md',
+                leftNm: 'rounded-l-md',
+                middle: '-ml-px',
+                right: 'rounded-r-md',
+                rightNm: 'rounded-r-md',
+            },
+            innerGroup: {
+                single: 'rounded-md',
+                left: 'rounded-l-md border-r-0 focus:z-10',
+                leftNm: 'rounded-l-md focus:z-10',
+                middle: 'focus:z-10',
+                right: 'rounded-r-md border-l-0 focus:z-10',
+                rightNm: 'rounded-r-md focus:z-10',
+            },
+            loading: {
+                white: 'bg-gray-200',
+                indigo: 'bg-white bg-indigo-400',
+                'indigo-light': 'bg-indigo-300',
+                'indigo-dark': 'bg-indigo-700',
+                red: 'bg-red-400',
+                yellow: 'bg-yellow-400',
+                green: 'bg-green-400',
+                blue: 'bg-blue-400',
+                purple: 'bg-purple-400',
+                pink: 'bg-pink-400',
+            },
+        };
+    },
+    computed: {
+        is_active: function () {
+            return this.state === 'active' && this.progress === undefined;
+        },
+        is_disabled: function () {
+            return this.state === 'disabled';
+        },
+        cursor: function () {
+            return this.is_active ? 'cursor-pointer' : this.is_disabled ? 'cursor-not-allowed' : 'cursor-wait';
+        },
+    },
+    methods: {
+        state_theme: function (theme) {
+            if (this.is_active)
+                return [this.themes[theme], this.active[theme]];
+            return this.themes[theme];
+        },
+        click: function () {
+            if (this.is_active)
+                this.$emit('click');
+        },
+    },
+}));
+
+// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=script&lang=ts&
+ /* harmony default export */ var src_PushButtonvue_type_script_lang_ts_ = (PushButtonvue_type_script_lang_ts_); 
 // EXTERNAL MODULE: ./src/PushButton.vue?vue&type=style&index=0&lang=css&
 var PushButtonvue_type_style_index_0_lang_css_ = __webpack_require__("6734");
 
@@ -582,7 +490,7 @@ function normalizeComponent (
 /* normalize component */
 
 var component = normalizeComponent(
-  src_PushButtonvue_type_script_lang_js_,
+  src_PushButtonvue_type_script_lang_ts_,
   render,
   staticRenderFns,
   false,
@@ -593,7 +501,7 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var PushButton = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"28f8825e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ButtonGroup.vue?vue&type=template&id=3cfb26f4&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"ec4bba34-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ButtonGroup.vue?vue&type=template&id=3cfb26f4&
 var ButtonGroupvue_type_template_id_3cfb26f4_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{staticClass:"inline-flex shadow-sm rounded"},[_vm._t("default")],2)}
 var ButtonGroupvue_type_template_id_3cfb26f4_staticRenderFns = []
 
@@ -634,23 +542,16 @@ var ButtonGroup_component = normalizeComponent(
 )
 
 /* harmony default export */ var ButtonGroup = (ButtonGroup_component.exports);
-// CONCATENATED MODULE: ./src/index.js
+// CONCATENATED MODULE: ./src/index.ts
 
-
-
-const ComponentList = {
-  PushButton: PushButton,
-  ButtonGroup: ButtonGroup
-}
 
 /* harmony default export */ var src_0 = ({
-  install (Vue, options = {}) {
-    for (const key in ComponentList) {
-      Vue.component(key, ComponentList[key])
+    install: function (Vue, options) {
+        if (options === void 0) { options = {}; }
+        Vue.component('PushButton', PushButton);
+        Vue.component('ButtonGroup', ButtonGroup);
     }
-  }
 });
-
 
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js

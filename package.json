@@ -8,9 +8,10 @@
     "dist/tv-button.css",
     "types/"
   ],
+  "types": "types/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "vue-cli-service build --target lib --name tv-button src/index.js"
+    "build": "vue-cli-service build --target lib --name tv-button src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,9 @@
     "@akryum/vue-cli-plugin-ssr": "~0.6.0",
     "@babel/preset-env": "^7.11.0",
     "@nuxtjs/eslint-config": "^6.0.0",
+    "@types/vue": "^2.0.0",
     "@vue/babel-preset-app": "^4.5.4",
+    "@vue/cli-plugin-typescript": "^4.5.13",
     "@vue/cli-service": "^4.5.4",
     "@vue/test-utils": "^1.0.5",
     "babel-core": "^7.0.0-bridge.0",
@@ -41,6 +44,7 @@
     "eslint": "^7.7.0",
     "eslint-plugin-vue": "^7.8.0",
     "jest": "^26.4.2",
+    "typescript": "^4.2.4",
     "vue": "^2.6.12",
     "vue-jest": "^3.0.6",
     "vue-template-compiler": "^2.6.12"

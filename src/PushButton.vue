@@ -45,13 +45,13 @@
         class="absolute inset-0 cursor-wait"
       />
       <span
-        v-if="progress !== false"
+        v-if="progress !== undefined"
         :style="`width: ${progress}%`"
         :class="loading[theme]"
         class="absolute inset-0 w-full h-full cursor-wait"
       />
       <span
-        v-if="progress !== false"
+        v-if="progress !== undefined"
         class="absolute inset-0 flex items-center justify-center"
       >
         <slot />
@@ -80,57 +80,38 @@
 }
 </style>
 
-<script>
-export default {
-  name: 'PushButton',
+<script lang="ts">
+
+import Vue, { PropType } from 'vue'
+import { PushButtonGroup, PushButtonSize, PushButtonState, PushButtonTheme } from './types'
+export default Vue.extend({
   props: {
-    to: {
-      type: [Boolean, String],
-      required: false,
-      default: false,
-    },
-    href: {
-      type: [Boolean, String],
-      required: false,
-      default: false,
-    },
+    to: String as PropType<string|undefined>,
+    href: String as PropType<string|undefined>,
     size: {
-      type: String,
+      type: String as PropType<PushButtonSize>,
       default: 'm',
-      validate: size => ['xs', 's', 'm', 'l', 'xl'].includes(size),
     },
     theme: {
-      type: String,
+      type: String as PropType<PushButtonTheme>,
       default: 'white',
-      validate: theme => ['white', 'red', 'yellow', 'blue', 'green', 'indigo', 'purple', 'indigo-light', 'indigo-dark'].includes(theme),
     },
     state: {
-      type: String,
+      type: String as PropType<PushButtonState>,
       default: 'active',
-      validate: state => ['active', 'loading', 'loading-quiet', 'disabled'].includes(state),
     },
-    progress: {
-      type: [Boolean, Number],
-      default: false,
-    },
+    progress: Number as PropType<number|undefined>,
     group: {
-      type: String,
-      required: false,
+      type: String as PropType<PushButtonGroup>,
       default: 'single',
-      validate: group => ['single', 'left', 'right', 'middle'].includes(group)
     },
-    innerClass: {
-      type: String,
-      required: false,
-      default: '',
-    },
+    innerClass: String as PropType<string|undefined>,
     ping: {
-      type: Boolean,
-      required: false,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     pingColor: {
-      type: String,
+      type: String as PropType<string>,
       required: false,
       default: 'pink',
     },
@@ -201,25 +182,25 @@ export default {
     }
   },
   computed: {
-    is_active () {
-      return this.state === 'active' && this.progress === false
+    is_active (): boolean {
+      return this.state === 'active' && this.progress === undefined
     },
-    is_disabled () {
+    is_disabled (): boolean {
       return this.state === 'disabled'
     },
-    cursor () {
+    cursor (): string {
       return this.is_active ? 'cursor-pointer' : this.is_disabled ? 'cursor-not-allowed' :  'cursor-wait'
     },
   },
   methods: {
-    state_theme (theme) {
+    state_theme (theme: PushButtonTheme): any {
       if (this.is_active)
         return [this.themes[theme], this.active[theme]]
       return this.themes[theme]
     },
-    click () {
+    click (): void {
       if (this.is_active) this.$emit('click')
     },
   },
-}
+})
 </script>
