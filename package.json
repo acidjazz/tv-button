@@ -2,12 +2,13 @@
   "name": "tv-button",
   "version": "1.0.35",
   "description": "buttons for nuxtjs powered by tailwindcss",
-  "main": "dist/tv-button.umd.min.js",
+  "main": "dist/tv-button.js",
   "files": [
-    "dist/tv-button.umd.min.js",
-    "dist/tv-button.umd.min.js.map",
+    "dist/tv-button.umd.js",
+    "dist/tv-button.umd.js.map",
     "dist/tv-button.css",
-    "types/"
+    "types/index.d.ts",
+    "types/PushButton.d.ts"
   ],
   "types": "types/index.d.ts",
   "scripts": {
