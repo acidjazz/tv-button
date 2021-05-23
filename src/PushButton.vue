@@ -84,7 +84,7 @@
 import Vue, { PropType } from 'vue'
 import { PushButtonGroup, PushButtonSize, PushButtonState, PushButtonTheme } from '../types/PushButton'
 export default Vue.extend({
-  name: 'PushButton',
+  name: 'push-button',
   props: {
     to: String as PropType<string|undefined>,
     href: String as PropType<string|undefined>,

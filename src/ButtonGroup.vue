@@ -7,6 +7,6 @@
 <script>
 import Vue from 'vue'
 export default Vue.extend({
-  name: 'ButtonGroup',
+  name: 'button-group',
 })
 </script>
