@@ -9,6 +9,7 @@
     "types/"
   ],
   "types": "types/index.d.ts",
+  "types": "types/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "vue-cli-service build --target lib --name tv-button src/index.ts"

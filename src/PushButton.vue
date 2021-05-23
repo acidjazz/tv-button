@@ -82,8 +82,9 @@
 
 <script lang="ts">
 import Vue, { PropType } from 'vue'
-import { PushButtonGroup, PushButtonSize, PushButtonState, PushButtonTheme } from 'tv-button'
+import { PushButtonGroup, PushButtonSize, PushButtonState, PushButtonTheme } from '../types/PushButton'
 export default Vue.extend({
+  name: 'PushButton',
   props: {
     to: String as PropType<string|undefined>,
     href: String as PropType<string|undefined>,
