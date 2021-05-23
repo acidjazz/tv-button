@@ -538,13 +538,14 @@ var ButtonGroup_component = normalizeComponent(
 // CONCATENATED MODULE: ./src/index.ts
 
 
-/* harmony default export */ var src_0 = ({
+var TvButton = {
     install: function (Vue, options) {
         if (options === void 0) { options = {}; }
-        Vue.component('PushButton', PushButton);
-        Vue.component('ButtonGroup', ButtonGroup);
+        Vue.component('push-button', PushButton);
+        Vue.component('button-group', ButtonGroup);
     }
-});
+};
+/* harmony default export */ var src_0 = (TvButton);
 
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
