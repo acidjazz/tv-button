@@ -502,40 +502,24 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var PushButton = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a382769a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ButtonGroup.vue?vue&type=template&id=2f492d72&
-var ButtonGroupvue_type_template_id_2f492d72_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{staticClass:"inline-flex shadow-sm rounded"},[_vm._t("default")],2)}
-var ButtonGroupvue_type_template_id_2f492d72_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a382769a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ButtonGroup.vue?vue&type=template&id=3201f577&
+var ButtonGroupvue_type_template_id_3201f577_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{staticClass:"inline-flex shadow-sm rounded"},[_vm._t("default")],2)}
+var ButtonGroupvue_type_template_id_3201f577_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/ButtonGroup.vue?vue&type=template&id=2f492d72&
+// CONCATENATED MODULE: ./src/ButtonGroup.vue?vue&type=template&id=3201f577&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ButtonGroup.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-
-
-/* harmony default export */ var ButtonGroupvue_type_script_lang_js_ = (external_commonjs_vue_commonjs2_vue_root_Vue_default.a.extend({
-  name: 'ButtonGroup',
-}));
-
-// CONCATENATED MODULE: ./src/ButtonGroup.vue?vue&type=script&lang=js&
- /* harmony default export */ var src_ButtonGroupvue_type_script_lang_js_ = (ButtonGroupvue_type_script_lang_js_); 
 // CONCATENATED MODULE: ./src/ButtonGroup.vue
 
-
-
+var script = {}
 
 
 /* normalize component */
 
 var ButtonGroup_component = normalizeComponent(
-  src_ButtonGroupvue_type_script_lang_js_,
-  ButtonGroupvue_type_template_id_2f492d72_render,
-  ButtonGroupvue_type_template_id_2f492d72_staticRenderFns,
+  script,
+  ButtonGroupvue_type_template_id_3201f577_render,
+  ButtonGroupvue_type_template_id_3201f577_staticRenderFns,
   false,
   null,
   null,
@@ -547,18 +531,11 @@ var ButtonGroup_component = normalizeComponent(
 // CONCATENATED MODULE: ./src/index.ts
 
 
-/*
-const TvButton = {
-  install (Vue: typeof _Vue, options = {}) {
-    Vue.component('push-button', PushButton)
-    Vue.component('button-group', ButtonGroup)
-  }
-}
-*/
 var TvButton = {
-    components: {
-        PushButton: PushButton,
-        ButtonGroup: ButtonGroup,
+    install: function (Vue, options) {
+        if (options === void 0) { options = {}; }
+        Vue.component('PushButton', PushButton);
+        Vue.component('ButtonGroup', ButtonGroup);
     }
 };
 /* harmony default export */ var src_0 = (TvButton);

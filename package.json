@@ -2,15 +2,15 @@
   "name": "tv-button",
   "version": "1.0.40",
   "description": "buttons for nuxtjs powered by tailwindcss",
-  "main": "dist/tv-button.umd.js",
+  "main": "dist/tv-button.umd.min.js",
   "files": [
-    "dist/tv-button.umd.js",
-    "dist/tv-button.umd.js.map",
+    "dist/tv-button.umd.min.js",
+    "dist/tv-button.umd.min.js.map",
     "dist/tv-button.css",
     "types/index.d.ts",
     "types/PushButton.d.ts"
   ],
-  "types": "types/index.d.ts",
+  "types": "types/*",
   "scripts": {
     "test": "jest",
     "build": "vue-cli-service build --target lib --name tv-button src/index.ts"

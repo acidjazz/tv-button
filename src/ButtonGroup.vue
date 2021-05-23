@@ -3,10 +3,3 @@
     <slot></slot>
   </span>
 </template>
-
-<script>
-import Vue from 'vue'
-export default Vue.extend({
-  name: 'ButtonGroup',
-})
-</script>
