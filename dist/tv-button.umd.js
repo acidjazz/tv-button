@@ -547,11 +547,18 @@ var ButtonGroup_component = normalizeComponent(
 // CONCATENATED MODULE: ./src/index.ts
 
 
+/*
+const TvButton = {
+  install (Vue: typeof _Vue, options = {}) {
+    Vue.component('push-button', PushButton)
+    Vue.component('button-group', ButtonGroup)
+  }
+}
+*/
 var TvButton = {
-    install: function (Vue, options) {
-        if (options === void 0) { options = {}; }
-        Vue.component('push-button', PushButton);
-        Vue.component('button-group', ButtonGroup);
+    components: {
+        PushButton: PushButton,
+        ButtonGroup: ButtonGroup,
     }
 };
 /* harmony default export */ var src_0 = (TvButton);

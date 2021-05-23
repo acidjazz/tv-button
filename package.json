@@ -2,10 +2,10 @@
   "name": "tv-button",
   "version": "1.0.34",
   "description": "buttons for nuxtjs powered by tailwindcss",
-  "main": "dist/tv-button.common.js",
+  "main": "dist/tv-button.umd.min.js",
   "files": [
-    "dist/tv-button.common.js",
-    "dist/tv-button.common.js.map",
+    "dist/tv-button.umd.min.js",
+    "dist/tv-button.umd.min.js.map",
     "dist/tv-button.css",
     "types/"
   ],
