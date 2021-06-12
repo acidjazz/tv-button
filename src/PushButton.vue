@@ -121,6 +121,7 @@ export default Vue.extend({
       themes: {
         text: 'text-gray-700 bg-white',
         white: 'border border-gray-300 text-gray-700 bg-white',
+        dark: 'border border-gray-600 text-gray-300 bg-gray-700',
         indigo: 'text-white bg-indigo-600',
         'indigo-light': 'text-indigo-700 bg-indigo-100',
         'indigo-dark': 'text-indigo-200 bg-indigo-900',
@@ -134,6 +135,7 @@ export default Vue.extend({
       active: {
         text: 'hover:text-gray-500 hover:bg-gray-100 focus:outline-none active:text-gray-800 active:bg-gray-50',
         white: 'hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50',
+        dark: 'hover:text-gray-500 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:text-gray-200 active:bg-gray-600',
         indigo: 'hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700',
         'indigo-light': 'hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200',
         'indigo-dark': 'hover:bg-indigo-700 hover:text-white focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo active:bg-indigo-800',
@@ -169,6 +171,7 @@ export default Vue.extend({
       },
       loading: {
         white: 'bg-gray-200',
+        dark: 'bg-gray-800',
         indigo: 'bg-white bg-indigo-400',
         'indigo-light': 'bg-indigo-300',
         'indigo-dark': 'bg-indigo-700',
