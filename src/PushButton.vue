@@ -135,7 +135,7 @@ export default Vue.extend({
       active: {
         text: 'hover:text-gray-500 hover:bg-gray-100 focus:outline-none active:text-gray-800 active:bg-gray-50',
         white: 'hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50',
-        dark: 'hover:text-gray-500 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:text-gray-200 active:bg-gray-600',
+        dark: 'hover:bg-gray-600 hover:text-gray-400 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:text-gray-200 active:bg-gray-500',
         indigo: 'hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700',
         'indigo-light': 'hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200',
         'indigo-dark': 'hover:bg-indigo-700 hover:text-white focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo active:bg-indigo-800',
