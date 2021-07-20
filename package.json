@@ -6,7 +6,6 @@
   "files": [
     "dist/tv-button.umd.min.js",
     "dist/tv-button.umd.min.js.map",
-    "dist/tv-button.css",
     "types/index.d.ts",
     "types/PushButton.d.ts"
   ],
