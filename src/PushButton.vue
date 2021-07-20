@@ -15,6 +15,14 @@
   </button>
 </template>
 
+<style>
+
+.push-button-loading {
+
+}
+
+</style>
+
 <script lang="ts">
 import Vue, { PropType } from 'vue'
 import {
