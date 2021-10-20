@@ -15,13 +15,6 @@
   </button>
 </template>
 
-<style>
-
-.push-button-loading {
-
-}
-
-</style>
 
 <script lang="ts">
 import Vue, { PropType } from 'vue'
@@ -59,6 +52,24 @@ export default Vue.extend({
           disabled: '',
         },
         {
+          name: 'whiteLeft',
+          primary: 'border border-gray-300 shadow-sm font-medium rounded-l-md text-gray-700 bg-white',
+          active: 'hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-fuchsia-500 focus:border-fuchsia-500',
+          disabled: '',
+        },
+        {
+          name: 'whiteMid',
+          primary: '-ml-px relative inline-flex items-center border border-gray-300 shadow-sm font-medium text-gray-700 bg-white',
+          active: 'hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-fuchsia-500 focus:border-fuchsia-500',
+          disabled: '',
+        },
+        {
+          name: 'whiteRight',
+          primary: '-ml-px border border-gray-300 shadow-sm font-medium rounded-r-md text-gray-700 bg-white',
+          active: 'hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-fuchsia-500 focus:border-fuchsia-500',
+          disabled: '',
+        },
+        {
           name: 'text',
           primary: 'text-gray-700',
           active: 'hover:text-gray-500 hover:bg-gray-100 focus:outline-none active:text-gray-800 active:bg-gray-50',
@@ -71,8 +82,8 @@ export default Vue.extend({
         },
         {
           name: 'indigo',
-          primary: 'text-white bg-indigo-600',
-          active: 'hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700',
+          primary: 'border border-transparent font-medium rounded shadow-sm text-white bg-indigo-600',
+          active: 'hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
           disabled: '',
         },
         {
