@@ -8083,12 +8083,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a382769a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=template&id=0cd6da5e&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"relative inline-flex items-center",class:[_vm.sizes[_vm.size], _vm.current_theme.primary, _vm.cursor, _vm.is_active ? _vm.current_theme.active : _vm.current_theme.disabled ],attrs:{"type":"button"},on:{"click":_vm.click}},[_vm._t("default"),(_vm.ping)?_c('span',{staticClass:"absolute top-0 right-0 -mr-1 -mt-1 z-10"},[_c('span',{staticClass:"flex w-3 h-3 relative"},[_c('span',{staticClass:"animate-ping absolute inline-flex h-full w-full rounded-full opacity-75",class:_vm.ping}),_c('span',{staticClass:"relative inline-flex rounded-full h-3 w-3",class:_vm.ping})])]):_vm._e()],2)}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a382769a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/PushButton.vue?vue&type=template&id=f027c846&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"relative inline-flex items-center",class:[_vm.sizes[_vm.size], _vm.current_theme.primary, _vm.current_theme.dark, _vm.cursor, _vm.is_active ? _vm.current_theme.active : _vm.current_theme.disabled ],attrs:{"type":"button"},on:{"click":_vm.click}},[_vm._t("default"),(_vm.ping)?_c('span',{staticClass:"absolute top-0 right-0 -mr-1 -mt-1 z-10"},[_c('span',{staticClass:"flex w-3 h-3 relative"},[_c('span',{staticClass:"animate-ping absolute inline-flex h-full w-full rounded-full opacity-75",class:_vm.ping}),_c('span',{staticClass:"relative inline-flex rounded-full h-3 w-3",class:_vm.ping})])]):_vm._e()],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=template&id=0cd6da5e&
+// CONCATENATED MODULE: ./src/PushButton.vue?vue&type=template&id=f027c846&
 
 // EXTERNAL MODULE: ./node_modules/vue/dist/vue.runtime.esm.js
 var vue_runtime_esm = __webpack_require__("2b0e");
@@ -8117,25 +8117,29 @@ var vue_runtime_esm = __webpack_require__("2b0e");
             themes: [
                 {
                     name: 'white',
-                    primary: 'border border-gray-300 dark:border-gray-600 shadow-sm font-medium rounded text-gray-700 bg-white dark:bg-gray-700 dark:text-gray-400',
-                    active: 'hover:bg-gray-50 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
+                    primary: 'border border-gray-300 shadow-sm font-medium rounded text-gray-700 bg-white',
+                    dark: 'dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 hover:dark:bg-gray-500',
+                    active: 'hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
                     disabled: '',
                 },
                 {
                     name: 'whiteLeft',
                     primary: 'border border-gray-300 shadow-sm font-medium rounded-l-md text-gray-700 bg-white',
+                    dark: 'dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 hover:dark:bg-gray-500',
                     active: 'hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-fuchsia-500 focus:border-fuchsia-500',
                     disabled: '',
                 },
                 {
                     name: 'whiteMid',
                     primary: '-ml-px relative inline-flex items-center border border-gray-300 shadow-sm font-medium text-gray-700 bg-white',
+                    dark: 'dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 hover:dark:bg-gray-500',
                     active: 'hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-fuchsia-500 focus:border-fuchsia-500',
                     disabled: '',
                 },
                 {
                     name: 'whiteRight',
                     primary: '-ml-px border border-gray-300 shadow-sm font-medium rounded-r-md text-gray-700 bg-white',
+                    dark: 'dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 hover:dark:bg-gray-500',
                     active: 'hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-fuchsia-500 focus:border-fuchsia-500',
                     disabled: '',
                 },
