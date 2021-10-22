@@ -12,7 +12,7 @@
   "types": "types/*",
   "scripts": {
     "test": "jest",
-    "build": "vue-cli-service build --target lib --name tv-button src/index.ts"
+    "build": "vue-cli-service build --target lib --inline-vue --name tv-button src/index.ts"
   },
   "repository": {
     "type": "git",

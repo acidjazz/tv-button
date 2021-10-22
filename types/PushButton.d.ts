@@ -7,6 +7,7 @@ export type PushButtonTheme = 'white'|'dark'|'red'|'yellow'|'blue'|'green'|'indi
 export interface PushButtonCustomTheme {
   name: string
   primary: string
+  dark: string
   active: string
   disabled: string
 }
