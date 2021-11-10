@@ -2,7 +2,7 @@
   <button
     type="button"
     class="relative inline-flex items-center"
-    :class="[sizes[size], current_theme.primary, current_theme.dark, cursor, is_active ? current_theme.active : current_theme.disabled ]"
+    :class="[sizes[size], current_theme.primary, current_theme.dark, cursor, is_active ? current_theme.active : current_theme.disabled, innerGroup[group] ]"
     @click="click"
   >
       <slot />
@@ -14,7 +14,6 @@
     </span>
   </button>
 </template>
-
 
 <script lang="ts">
 import Vue, { PropType } from 'vue'
@@ -40,7 +39,13 @@ export default Vue.extend({
     },
     ping: {
       type: String,
-    }
+    },
+    group: {
+      type: String,
+      required: false,
+      default: 'single',
+      validator: group => ['single', 'left', 'right', 'middle'].includes(group)
+    },
   },
   data () {
     return {
@@ -145,6 +150,12 @@ export default Vue.extend({
         m: 'px-4 py-2 text-sm leading-5',
         l: 'px-4 py-2 text-base leading-6',
         xl: 'px-6 py-3 text-base leading-6',
+      },
+      innerGroup: {
+        single: 'rounded-md',
+        left: 'rounded-l-md border-r-0 focus:z-10',
+        middle: 'rounded-none focus:z-10 -ml-px',
+        right: 'rounded-none rounded-r-md border-l-0 focus:z-10',
       },
     }
   },
